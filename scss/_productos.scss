@@ -1,0 +1,44 @@
+@use "keys";
+@use "extends";
+
+.corpus2 {
+  @extend %flex-center;
+  .img-container2 {
+    @extend %flex-center;
+    margin-top: 4%;
+    flex-wrap: wrap;
+    width: 60%;
+    .img-corpus2 {
+      margin: 2%;
+      img {
+        border-radius: 25px;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .img-container2 {
+      justify-content: space-around;
+      flex-direction: column;
+      margin-top: 8%;
+      flex-wrap: nowrap;
+      width: 35%;
+    }
+    .img-corpus2 {
+      margin: 2%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.corpus3 {
+  @extend %flex-center;
+  margin: 1%;
+  .text2-container {
+    display: flex;
+    width: 80%;
+    background-color: keys.$color-fondo-alt;
+    padding: 2%;
+    border-radius: 25px;
+  }
+}

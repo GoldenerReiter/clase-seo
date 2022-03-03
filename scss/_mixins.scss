@@ -1,0 +1,5 @@
+@mixin caja-basal($display, $justify, $ancho) {
+  display: $display;
+  justify-content: $justify;
+  width: $ancho;
+}

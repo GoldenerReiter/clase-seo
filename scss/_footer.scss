@@ -1,0 +1,9 @@
+@use "keys";
+
+.footer-container {
+  background-color: keys.$color-opcional;
+  border-top: keys.$fondo-color solid 1px;
+  @media screen and (max-width: 600px) {
+    font-size: 9px;
+  }
+}

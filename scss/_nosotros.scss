@@ -1,0 +1,37 @@
+@use "extends";
+@use "keys";
+
+.corpus4 {
+  @extend %flex-center;
+  .img-container3 {
+    @extend %flex-center;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    img {
+      width: 50%;
+      border-radius: 25px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .img-container3 img {
+      width: 80%;
+    }
+  }
+}
+.corpus5 {
+  @extend %flex-center;
+  margin-bottom: 5.3%;
+  .text3-container {
+    display: flex;
+    width: 80%;
+    background-color: keys.$color-fondo-alt;
+    padding: 2%;
+    border-radius: 25px;
+    margin-top: 1%;
+    @media screen and (max-width: 600px) {
+      margin-top: 3%;
+      font-size: 20px;
+      width: 90%;
+    }
+  }
+}

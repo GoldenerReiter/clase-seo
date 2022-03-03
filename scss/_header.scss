@@ -1,0 +1,18 @@
+@use "mixins";
+@use "keys";
+
+.header-container {
+  @include mixins.caja-basal(flex, center, 100%);
+  position: fixed;
+  background-color: keys.$resalto-color;
+  flex-wrap: wrap;
+  .header {
+    @include mixins.caja-basal(flex, space-around, 100%);
+    flex-direction: row;
+    .header-item {
+      @include mixins.caja-basal(flex, center, 33%);
+      padding: 1%;
+      border: solid keys.$fondo-color 2px;
+    }
+  }
+}
